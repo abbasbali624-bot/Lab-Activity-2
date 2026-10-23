@@ -1,4 +1,4 @@
-public class Truck extends Vehicle2 {
+public class Truck extends Vehicle {
     private int wheels;
 
     public Truck(String brand, String model, int year, int wheels) {

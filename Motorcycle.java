@@ -1,4 +1,4 @@
-public class Motorcycle extends Vehicle2 {
+public class Motorcycle extends Vehicle {
     private String fuelType;
 
     public Motorcycle(String brand, String model, int year, String fuelType) {
