@@ -1,0 +1,14 @@
+public class Car extends Vehicle2 {
+    private int doors;
+
+    public Car(String brand, String model, int year, int doors) {
+        super(brand, model, year);
+        this.doors = doors;
+    }
+
+    @Override
+    public void displayInfo() {
+        super.displayInfo();
+        System.out.println("Type: Car | Doors: " + doors);
+    }
+}
