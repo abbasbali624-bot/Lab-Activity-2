@@ -1,35 +1,24 @@
+public class Motorcycle extends Vehicle implements Serviceable {
+    private boolean hasSidecar;
 
-public class Motorcycle extends Vehicle {
-    String engineType;
-
-    public Motorcycle(String brand, String model, int year, String engineType) {
+    public Motorcycle(String brand, String model, int year, boolean hasSidecar) {
         super(brand, model, year);
-        this.engineType = engineType;
+        this.hasSidecar = hasSidecar;
     }
 
     @Override
-    public void printDetails() {
-        super.printDetails();
-        System.out.println("Engine Type: " + engineType);
+    public void displayInfo() {
+        super.displayInfo();
+        System.out.println("Has sidecar: " + hasSidecar);
     }
 
     @Override
-    public void moveForward() {
-        System.out.println("A motorcycle moves forward");
+    public void move() {
+        System.out.println("The motorcycle is riding.");
     }
 
     @Override
-    public void moveBackwards() {
-        System.out.println("A motorcycle moves backwards");
-    }
-
-    @Override
-    public void moveLeft() {
-        System.out.println("A motorcycle moves left");
-    }
-
-    @Override
-    public void moveRight() {
-        System.out.println("A motorcycle moves right");
+    public void service() {
+        System.out.println("Motorcycle: inspect tires and brakes.");
     }
 }

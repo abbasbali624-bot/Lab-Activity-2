@@ -1,8 +1,8 @@
 
 public abstract class Vehicle {
-    String brand;
-    String model;
-    int year;
+    protected String brand;
+    protected String model;
+    protected int year;
 
     public Vehicle(String brand, String model, int year) {
         this.brand = brand;
@@ -10,14 +10,12 @@ public abstract class Vehicle {
         this.year = year;
     }
 
-    public void printDetails() {
+    public void displayInfo() {
         System.out.println("Brand: " + brand);
         System.out.println("Model: " + model);
         System.out.println("Year: " + year);
     }
 
-    public abstract void moveForward();
-    public abstract void moveBackwards();
-    public abstract void moveLeft();
-    public abstract void moveRight();
+    // each vehicle moves in its own way
+    public abstract void move();
 }
